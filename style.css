@@ -26,7 +26,7 @@ body {
   border: none;
   color: #fff;
   border-radius: 15px;
-  max-width: 24vw;
+  width: 24vw;
   max-height: 90vh;
   box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.2);
   background-color: #181b2e;
@@ -49,7 +49,7 @@ body {
   border: none;
   border-radius: 20px;
   font-size: 1rem;
-  width: 320px;
+  width: auto;
 
   padding: 12px 10px 12px 10px;
   margin: -20px 15px 20px 15px;
@@ -63,49 +63,65 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 280px;
+  top: 18rem;
 }
 .humidity {
   position: relative;
-  bottom: 150px;
-  left: 120px;
+  bottom: 9rem;
+  left: 7.5rem;
   font-size: 1rem;
 }
 .wind {
   position: relative;
-  bottom: 180px;
+  bottom: 11.5rem;
   right: 120px;
   font-size: 1rem;
 }
 .weatherImage img {
   position: relative;
-  bottom: 380px;
-  height: 220px;
-  width: 370px;
+  bottom: 23.6rem;
+  height: 14rem;
+  width: 24rem;
   object-fit: cover;
 }
 
 .weather small {
   position: relative;
-  bottom: 170px;
+  bottom: 10.5rem;
   font-size: 1.1rem;
 }
 .weather h5 {
   position: relative;
-  bottom: 180px;
+  bottom: 11.5rem;
   font-size: 1.5rem;
 }
 
 .imageIcon img {
-  height: 150px;
-  width: 150px;
+  height: 150%;
+  width: 150%;
   z-index: 1;
+  right: 1.5rem;
   position: relative;
-  bottom: 130px;
+  bottom: 8rem;
 }
 .temp {
   position: relative;
-  bottom: 170px;
+  bottom: 11rem;
   font-size: 4rem;
   text-align: center;
+}
+@media only screen and (max-width: 1500px) {
+  .container {
+    width: 100vw;
+    max-height: 100vh;
+    border-radius: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .container::-webkit-scrollbar {
+    display: none;
+  }
+  .weatherImage img {
+    width: 100vw;
+  }
 }

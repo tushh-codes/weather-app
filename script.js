@@ -49,13 +49,13 @@ const imageLoader = () => {
   const weatherImage = document.createElement("div");
   weatherImage.classList.add("weatherImage");
 
-  if (hour >= 12) {
+  if (hour <= 7 || hour >= 18) {
     weatherImage.innerHTML = `
-    <img src ='./gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg' alt ='image'></img>
+    <img src ='./tropical-landscape-with-sea-bay-night_107791-5364.jpg'></img>
     `;
   } else
     weatherImage.innerHTML = `
-    <img src ='./tropical-landscape-with-sea-bay-night_107791-5364.jpg'></img>
+    <img src ='./gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg' alt ='image'></img>
     `;
   main.appendChild(weatherImage);
 };

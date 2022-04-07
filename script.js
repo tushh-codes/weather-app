@@ -12,6 +12,9 @@ async function getWeatherByLocation(city) {
   const respData = await resp.json();
 
   console.log(respData);
+  if (respData.cod == 404) {
+    alert("Sorry! City not found");
+  }
 
   addWeatherToPage(respData);
 }
